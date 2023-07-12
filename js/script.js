@@ -14,7 +14,7 @@ let displayCountries = countries => {
         <img src="${country.flags.png}" alt="${country.name.common}" />
         <h3>Country: ${country.name.common}</h3>
         <h5>Capital: ${country.capital ? country.capital : 'No Capital'}</h5>
-        <button onclick="loadCountryDetails('${code}')">Details</button>
+        <button class="button" onclick="loadCountryDetails('${code}')">Details</button>
         `;
         allCountries.appendChild(countryCard);
     }
