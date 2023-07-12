@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .card{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: lightgrey;
+        }
+        .card:hover{
+            background-color: lightgreen;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Countries Info</h2>
+        <hr>
+    </header>
+    <main>
+        <div id="country-details">
+        </div>
+        <br>
+        <div id="all-countries" class="container">
+        </div>
+
+        <!-- js script -->
+        <script src="./js/script.js"></script>
+    </main>
+</body>
+</html>
